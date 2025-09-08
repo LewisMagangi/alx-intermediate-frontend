@@ -1,0 +1,41 @@
+# SASS Installation Steps
+
+## Method 1: Using Node.js and npm (Recommended)
+
+1. Install Node.js version 20.16.0 using nvm:
+   ```bash
+   curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.7/install.sh | bash
+   ```
+
+2. Exit and reopen terminal to load nvm
+
+3. Install and use Node.js v20.16.0:
+   ```bash
+   nvm install 20.16.0
+   nvm use 20.16.0
+   ```
+
+4. Install SASS globally:
+   ```bash
+   npm install -g sass@3.7.4
+   ```
+
+## Method 2: Alternative installation (if Node.js is already installed)
+
+1. Install SASS using npm:
+   ```bash
+   npm install sass -v 3.7.4
+   ```
+
+## Verification
+
+Check if SASS is installed correctly:
+```bash
+sass --version
+```
+
+## Note for Windows Users
+
+- Ensure PowerShell execution policy allows scripts
+- Consider using Git Bash or WSL for better compatibility with Unix commands
+- You may need to use `npm install -g sass` instead of the version-specific command

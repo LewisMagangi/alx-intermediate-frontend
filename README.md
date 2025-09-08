@@ -1,22 +1,23 @@
 # ALX Intermediate Frontend
 
-This repository contains projects and exercises for the ALX Intermediate Frontend curriculum, focusing on advanced HTML, CSS, and JavaScript concepts.
+This repository contains projects and exercises for the ALX Intermediate Frontend curriculum, focusing on advanced HTML, CSS, and modern web development practices including CSS preprocessors.
 
-## Projects
+## Projects Overview
+
+This repository contains three main projects that progressively build frontend development skills:
 
 ### 0x00-semantic_html - Semantic HTML: Best Practices for Accessibility and SEO
 
-This project focuses on building a solid foundation in Semantic HTML while emphasizing accessibility, SEO optimization, and the implementation of ARIA roles for enhanced usability.
+A foundation project focusing on semantic HTML structure, accessibility, and SEO optimization.
 
-#### Learning Objectives
+**Key Topics:**
 
-- Master Semantic HTML structure using elements like `<header>`, `<main>`, `<article>`, `<section>`, and `<footer>`
-- Optimize web pages for SEO through proper meta tags and document structure
-- Enhance accessibility with ARIA roles and attributes
-- Understand form design best practices for accessibility
-- Practice incremental development and progressive enhancement
+- Semantic HTML elements (`<header>`, `<main>`, `<article>`, `<section>`, `<footer>`)
+- SEO optimization with meta tags
+- ARIA roles and accessibility features
+- Form design best practices
 
-#### Project Structure
+**Files:**
 
 ```text
 0x00-semantic_html/
@@ -26,86 +27,136 @@ This project focuses on building a solid foundation in Semantic HTML while empha
 └── 3-index.html    # Form accessibility with ARIA roles
 ```
 
-#### Files Description
+### 0x02-tailwind-css - Tailwind CSS Framework
 
-##### 0-index.html
+Exploration of utility-first CSS framework for rapid UI development.
 
-- Basic HTML document structure using semantic elements
-- Contains header with navigation, main content area with article and section, and footer
+**Key Topics:**
 
-##### 1-index.html
+- Utility-first CSS approach
+- Responsive design patterns
+- Component-based styling
+- Grid and Flexbox layouts
 
-- Builds upon 0-index.html with proper meta tags
-- Includes charset, description, keywords, author, viewport, and title tags
-- Optimized for SEO and mobile responsiveness
+**Files:**
 
-##### 2-index.html
+```text
+0x02-tailwind-css/
+├── package.json           # Node.js dependencies
+├── tailwind.config.js     # Tailwind configuration
+├── 1-index.html          # Basic Tailwind setup
+├── 2-index.html          # Typography and layout
+├── 3-nav_index.html      # Navigation components
+├── 4-flexbox_index.html  # Flexbox layouts
+├── 5-gridflex_index.html # Grid and Flex combinations
+├── 6-imageGallery.html   # Image gallery with Tailwind
+└── src/
+    ├── input.css         # Source CSS file
+    └── output.css        # Compiled CSS output
+```
 
-- Complete blog post layout with semantic structure
-- Implements proper heading hierarchy
-- Uses time element with datetime attribute
-- Includes figure with image and caption
-- Contains article footer with author and publication information
+### 0x03-sass_scss - CSS Preprocessors: SASS/SCSS for Efficient Styling
 
-##### 3-index.html
+Introduction to SASS/SCSS preprocessor for maintainable and efficient CSS development.
 
-- Enhanced accessibility with ARIA roles and attributes
-- Accessible form implementation with proper labeling
-- ARIA live regions for dynamic content updates
-- Form validation attributes for improved user experience
+**Key Topics:**
 
-#### Key Features Implemented
+- CSS preprocessor concepts and advantages
+- Variables for consistent theming
+- Nesting for organized code structure
+- Mixins for reusable style patterns
+- SASS compilation workflow
 
-**Semantic Structure:**
+**Files:**
 
-- Proper use of HTML5 semantic elements
-- Logical content hierarchy
-- Screen reader friendly markup
+```text
+0x03-sass_scss/
+├── 0-installation-script   # SASS installation guide
+├── 0-debug_log.scss       # Debug output demonstration
+├── 1-color_variable.scss   # Variables usage
+├── 2-nested_tag.scss      # Nesting demonstration
+├── 3-mixin_margins.scss   # Mixins for reusable styles
+└── README.md              # Detailed project documentation
+```
 
-**SEO Optimization:**
+## Quick Start Guide
 
-- Meta description and keywords
-- Proper title tags
-- Semantic content structure
-- Mobile-responsive viewport settings
+### Prerequisites
 
-**Accessibility Features:**
+- Modern web browser (Chrome, Firefox, Safari, Edge)
+- Text editor or IDE (VS Code recommended)
+- Node.js (v20.16.0 for SASS projects)
+- Basic understanding of HTML and CSS
 
-- ARIA roles and attributes
-- Proper form labeling
-- Required field indicators
-- Live regions for dynamic updates
-- Alt text for images
+### Installation Steps
 
-#### Technologies Used
+1. Clone this repository:
 
-- HTML5
-- Semantic HTML elements
-- ARIA (Accessible Rich Internet Applications)
-- SEO best practices
+   ```bash
+   git clone <repository-url>
+   cd alx-intermediate-frontend
+   ```
 
-#### Getting Started
+2. For Tailwind CSS projects:
 
-1. Clone this repository
-2. Navigate to the `0x00-semantic_html` directory
-3. Open any of the HTML files in a web browser
-4. Use browser developer tools to inspect the semantic structure
-5. Test with screen readers for accessibility validation
+   ```bash
+   cd 0x02-tailwind-css
+   npm install
+   npm run build
+   ```
 
-#### Browser Compatibility
+3. For SASS/SCSS projects:
+
+   ```bash
+   cd 0x03-sass_scss
+   npm install -g sass@3.7.4
+   ```
+
+### Running the Projects
+
+- **HTML Projects**: Open `.html` files directly in a web browser
+- **Tailwind Projects**: Run `npm run build` to compile CSS, then open HTML files
+- **SASS Projects**: Compile with `sass input.scss output.css` before viewing
+
+## Technology Stack
+
+- **HTML5**: Semantic markup and accessibility features
+- **CSS3**: Modern styling and layout techniques
+- **Tailwind CSS**: Utility-first CSS framework
+- **SASS/SCSS**: CSS preprocessor with advanced features
+- **Node.js**: Development environment and package management
+- **npm**: Package manager for dependencies
+
+## Project Status
+
+- **0x00-semantic_html**: Foundation HTML and accessibility ✅
+- **0x02-tailwind-css**: Modern CSS framework implementation ✅
+- **0x03-sass_scss**: CSS preprocessor mastery (Current - Sep 8-15, 2025) 🚧
+
+## Real-World Applications
+
+These projects prepare students for professional web development by covering:
+
+- **Semantic HTML**: Essential for SEO, accessibility, and maintainable code
+- **Tailwind CSS**: Rapid prototyping and consistent design systems
+- **SASS/SCSS**: Large-scale CSS management in enterprise applications
+
+## Browser Support
+
+All projects are designed to work with:
 
 - Modern web browsers (Chrome, Firefox, Safari, Edge)
 - Mobile browsers
 - Screen readers and assistive technologies
 
-#### Contributing
+## Contributing Guidelines
 
-This is an educational project for ALX. Please follow the project guidelines and requirements.
+This repository is part of the ALX curriculum. Each project follows specific requirements and guidelines. Please refer to individual project READMEs for detailed instructions.
 
-#### Author
+## Repository Author
 
-ALX Student
+ALX Student - Intermediate Frontend Development Program
 
-#### License
+## Educational License
 
-This project is part of the ALX curriculum.
+This project is part of the ALX curriculum and follows educational use guidelines.
